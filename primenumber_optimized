@@ -1,0 +1,16 @@
+import sys 
+print(sys.version)
+
+n=int(input())
+res=False
+
+for i in range(2,int(n**0.5)+1):
+  print(i)
+  if(n%i==0): 
+    res=True
+    break
+
+if(res==True):
+  print("Not Prime number")
+else:
+  print("Prime number")
